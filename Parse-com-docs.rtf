@@ -1,0 +1,2467 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 Monaco;\f4\fnil\fcharset0 HelveticaNeue-Medium;}
+{\colortbl;\red255\green255\blue255;\red72\green88\blue100;\red16\green121\blue2;\red158\green0\blue49;
+\red228\green238\blue255;\red15\green111\blue1;\red169\green14\blue26;\red66\green130\blue251;\red203\green100\blue93;
+\red51\green110\blue109;\red35\green66\blue10;\red154\green240\blue157;\red251\green130\blue39;\red10\green82\blue155;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid501\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww20180\viewh20760\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs48 \cf0 Parse SDK
+\fs24 \
+\
+{\field{\*\fldinst{HYPERLINK "https://www.parse.com/apps/quickstart#parse_push/ios/existing"}}{\fldrslt https://www.parse.com/apps/quickstart#parse_push/ios/existing}}\
+\
+/Users/kevint/Documents/xcode/library/ParseStarterProject\
+\
+
+\b Drag the Parse.framework and Bolts.framework
+\b0  you downloaded into your Xcode project folder target. Click on Targets 
+\f1 \uc0\u8594 
+\f0  Your app name 
+\f1 \uc0\u8594 
+\f0  and then the 'Build Phases' tab. Expand 'Link Binary With Libraries' as shown. Click the + button in the bottom left of the 'Link Binary With Libraries' section and add the following libraries:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f2\fs28 \cf0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+AudioToolbox.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+CFNetwork.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+CoreGraphics.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+CoreLocation.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+libz.dylib\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+MobileCoreServices.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+QuartzCore.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Security.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+StoreKit.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+SystemConfiguration.framework\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf2 \
+NEW PROJECT \
+\
+\pard\tx720\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+First make sure to include our SDK libraries from your 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+ParseStarterProjectViewController.h
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+ file:
+\f3\fs26 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth25720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx720\pardeftab720
+\cf4 \cb5 \expnd0\expndtw0\kerning0
+#import <Parse/Parse.h>\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\intbl\itap1\tx720\pardeftab720
+
+\f2\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\fs28 \cf0 \expnd0\expndtw0\kerning0
+Then copy and paste this code into your app, for example in the 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+viewDidLoad
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+ method of 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+ParseStarterProjectViewController.m
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+:
+\f3\fs26 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth25720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx720\pardeftab720
+\cf3 \cb5 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *testObject = [PFObject \cf6 \expnd0\expndtw0\kerning0
+objectWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"TestObject"\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 testObject[\cf7 \expnd0\expndtw0\kerning0
+@"foo"\cf0 \expnd0\expndtw0\kerning0
+] = \cf7 \expnd0\expndtw0\kerning0
+@"bar"\cf0 \expnd0\expndtw0\kerning0
+;\uc0\u8232 [testObject \cf6 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\fs28 \cf0 \expnd0\expndtw0\kerning0
+Run your app. A new object of class 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+TestObject
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+ will be sent to the Parse Cloud and saved. \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Retrieving Objects\
+\pard\pardeftab720
+
+\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"GameScore"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+getObjectInBackgroundWithId\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"xWMyZ4YEGZ"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+block\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *gameScore, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Do something with the returned PFObject in the gameScore variable.\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"%@"\cf0 \expnd0\expndtw0\kerning0
+, gameScore);\
+\}];\
+\cf10 \expnd0\expndtw0\kerning0
+// The InBackground methods are asynchronous, so any code after this will run \cf0 \expnd0\expndtw0\kerning0
+\
+\cf10 \expnd0\expndtw0\kerning0
+// immediately.\'a0 Any code that depends on the query result should be moved\cf0 \expnd0\expndtw0\kerning0
+\
+\cf10 \expnd0\expndtw0\kerning0
+// inside the completion block above.
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+To get the values out of the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, you can use either the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+objectForKey:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ method or the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+[]
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ subscripting operator:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf8 \cb5 \expnd0\expndtw0\kerning0
+int\cf0 \expnd0\expndtw0\kerning0
+ score = [[gameScore \cf3 \expnd0\expndtw0\kerning0
+objectForKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+] \cf3 \expnd0\expndtw0\kerning0
+intValue\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+NSString\cf0 \expnd0\expndtw0\kerning0
+ *playerName = gameScore[\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf8 \expnd0\expndtw0\kerning0
+BOOL\cf0 \expnd0\expndtw0\kerning0
+ cheatMode = [gameScore[\cf9 \expnd0\expndtw0\kerning0
+@"cheatMode"\cf0 \expnd0\expndtw0\kerning0
+] \cf3 \expnd0\expndtw0\kerning0
+boolValue\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+NSString\cf0 \expnd0\expndtw0\kerning0
+ *objectId = gameScore\cf3 \expnd0\expndtw0\kerning0
+.objectId\cf0 \expnd0\expndtw0\kerning0
+;\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you need to refresh an object you already have with the latest data that is in the Parse Cloud, you can call 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+refresh
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+[myObject \cf3 \expnd0\expndtw0\kerning0
+refresh\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Updating Objects\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+Updating an object is simple. Just set some new data on it and call one of the save methods. Assuming you have saved the object and have the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+objectId
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, you can retrieve the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ using a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ and update its data:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"GameScore"\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Retrieve the object by id\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+getObjectInBackgroundWithId\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"xWMyZ4YEGZ"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+block\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *gameScore, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\'a0\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Now let's update it with some new data. In this case, only cheatMode and score\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// will get sent to the cloud. playerName hasn't changed.\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+gameScore[\cf9 \expnd0\expndtw0\kerning0
+@"cheatMode"\cf0 \expnd0\expndtw0\kerning0
+] = \cf8 \expnd0\expndtw0\kerning0
+@YES\cf0 \expnd0\expndtw0\kerning0
+;\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+gameScore[\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+] = \cf8 \expnd0\expndtw0\kerning0
+@1338\cf0 \expnd0\expndtw0\kerning0
+;\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[gameScore \cf3 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\}];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Deleting Objects\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+To delete an object from the cloud:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+[gameScore \cf3 \expnd0\expndtw0\kerning0
+deleteInBackground\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+If you want to run a callback when the delete is confirmed, you can use the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+deleteInBackgroundWithBlock:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ or 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+deleteInBackgroundWithTarget:selector:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ methods. If you want to block the calling thread, you can use the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+delete
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ method.\
+You can delete a single field from an object with the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+removeObjectForKey
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ method:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// After this, the playerName field will be empty\cf0 \expnd0\expndtw0\kerning0
+\
+[gameScore \cf3 \expnd0\expndtw0\kerning0
+removeObjectForKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Saves the field deletion to the Parse Cloud\cf0 \expnd0\expndtw0\kerning0
+\
+[gameScore \cf3 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Relational Data\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+Objects can have relationships with other objects. To model this behavior, any 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ can be used as a value in other 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s. Internally, the Parse framework will store the referred-to object in just one place, to maintain consistency.\
+\pard\pardeftab720
+\cf11 \cb12 \expnd0\expndtw0\kerning0
+Watch the {\field{\*\fldinst{HYPERLINK "https://www.parse.com/tutorials/one-to-many-relationships"}}{\fldrslt \cf8 \expnd0\expndtw0\kerning0
+One-To-Many Relationships}} tutorial, where you'll learn how to create a one-to-many relationship between two 
+\f3\fs28 \cf8 \expnd0\expndtw0\kerning0
+PFObjects
+\f2\fs32 \cf11 \expnd0\expndtw0\kerning0
+ in a simple blogging application.\
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+For example, each 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Comment
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ in a blogging app might correspond to one 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Post
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. To create a new 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Post
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ with a single 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Comment
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, you could write:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Create the post\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *myPost = [PFObject \cf3 \expnd0\expndtw0\kerning0
+objectWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Post"\cf0 \expnd0\expndtw0\kerning0
+];\
+myPost[\cf9 \expnd0\expndtw0\kerning0
+@"title"\cf0 \expnd0\expndtw0\kerning0
+] = \cf9 \expnd0\expndtw0\kerning0
+@"I'm Hungry"\cf0 \expnd0\expndtw0\kerning0
+;\
+myPost[\cf9 \expnd0\expndtw0\kerning0
+@"content"\cf0 \expnd0\expndtw0\kerning0
+] = \cf9 \expnd0\expndtw0\kerning0
+@"Where should we go for lunch?"\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Create the comment\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *myComment = [PFObject \cf3 \expnd0\expndtw0\kerning0
+objectWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Comment"\cf0 \expnd0\expndtw0\kerning0
+];\
+myComment[\cf9 \expnd0\expndtw0\kerning0
+@"content"\cf0 \expnd0\expndtw0\kerning0
+] = \cf9 \expnd0\expndtw0\kerning0
+@"Let's do Sushirrito."\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Add a relation between the Post and Comment\cf0 \expnd0\expndtw0\kerning0
+\
+myComment[\cf9 \expnd0\expndtw0\kerning0
+@"parent"\cf0 \expnd0\expndtw0\kerning0
+] = myPost;\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// This will save both myPost and myComment\cf0 \expnd0\expndtw0\kerning0
+\
+[myComment \cf3 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can also link objects using just their 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+objectId
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s like so:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Add a relation between the Post with objectId "1zEcyElZ80" and the comment\cf0 \expnd0\expndtw0\kerning0
+\
+myComment[\cf9 \expnd0\expndtw0\kerning0
+@"parent"\cf0 \expnd0\expndtw0\kerning0
+] = [PFObject \cf3 \expnd0\expndtw0\kerning0
+objectWithoutDataWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Post"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+objectId\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"1zEcyElZ80"\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+By default, when fetching an object, related 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s are not fetched. These objects' values cannot be retrieved until they have been fetched like so:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *post = fetchedComment[\cf9 \expnd0\expndtw0\kerning0
+@"parent"\cf0 \expnd0\expndtw0\kerning0
+];\
+[post \cf3 \expnd0\expndtw0\kerning0
+fetchIfNeededInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *post, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0NSString\cf0 \expnd0\expndtw0\kerning0
+ *title = post[\cf9 \expnd0\expndtw0\kerning0
+@"title"\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// do something with your title variable\cf0 \expnd0\expndtw0\kerning0
+\
+\}];\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can also model a many-to-many relation using the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFRelation
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ object. This works similar to an 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSArray
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ of 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObjects
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, except that you don't need to download all the Objects in a relation at once. This allows 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFRelation
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ to scale to many more objects than the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSArray
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ of 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ approach. For example, a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+User
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ may have many 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Post
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s that they might like. In this case, you can store the set of 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Post
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s that a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+User
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ likes using 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+relationForKey:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. In order to add a post to the list, the code would look something like:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFUser\cf0 \expnd0\expndtw0\kerning0
+ *user = [PFUser \cf3 \expnd0\expndtw0\kerning0
+currentUser\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+PFRelation\cf0 \expnd0\expndtw0\kerning0
+ *relation = [user \cf3 \expnd0\expndtw0\kerning0
+relationForKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"likes"\cf0 \expnd0\expndtw0\kerning0
+];\
+[relation \cf3 \expnd0\expndtw0\kerning0
+addObject\cf0 \expnd0\expndtw0\kerning0
+:post];\
+[user \cf3 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can remove a post from the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFRelation
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ with something like:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+[relation \cf3 \expnd0\expndtw0\kerning0
+removeObject\cf0 \expnd0\expndtw0\kerning0
+:post];\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+By default, the list of objects in this relation are not downloaded. You can get the list of 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Post
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s by using calling 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ on the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ returned by 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+query
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. The code would look like:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+[[relation \cf3 \expnd0\expndtw0\kerning0
+query\cf0 \expnd0\expndtw0\kerning0
+] \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *objects, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// There was an error\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// objects has all the Posts the current user liked.\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\}];\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you want only a subset of the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+Post
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s you can add extra constraints to the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ returned by 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+query
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ like this:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [relation \cf3 \expnd0\expndtw0\kerning0
+query\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf10 \expnd0\expndtw0\kerning0
+// Add other query constraints.\cf0 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\pardeftab720
+\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+For more details on 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ please look at the query portion of this guide. A 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFRelation
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ behaves similar to an 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSArray
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ of 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, so any queries you can do on arrays of objects (other than 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+includeKey:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+) you can do on 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFRelation
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\pardeftab720
+\cf8 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Data Types\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+So far we've used values with type 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSString
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSNumber
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. Parse also supports 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSDate
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSData
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSNull
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+You can nest 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSDictionary
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSArray
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ objects to store more structured data within a single 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\
+Some examples:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+NSNumber\cf0 \expnd0\expndtw0\kerning0
+ *number = \cf8 \expnd0\expndtw0\kerning0
+@42\cf0 \expnd0\expndtw0\kerning0
+;\
+\cf3 \expnd0\expndtw0\kerning0
+NSString\cf0 \expnd0\expndtw0\kerning0
+ *string = [NSString \cf3 \expnd0\expndtw0\kerning0
+stringWithFormat\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"the number is %@"\cf0 \expnd0\expndtw0\kerning0
+, \cf3 \expnd0\expndtw0\kerning0
+number\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+NSDate\cf0 \expnd0\expndtw0\kerning0
+ *date = [NSDate \cf3 \expnd0\expndtw0\kerning0
+date\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+NSData\cf0 \expnd0\expndtw0\kerning0
+ *data = [\cf9 \expnd0\expndtw0\kerning0
+@"foo"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+dataUsingEncoding\cf0 \expnd0\expndtw0\kerning0
+:NSUTF\cf13 \expnd0\expndtw0\kerning0
+8\cf0 \expnd0\expndtw0\kerning0
+StringEncoding];\
+\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *array = @[string, \cf3 \expnd0\expndtw0\kerning0
+number\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+NSDictionary\cf0 \expnd0\expndtw0\kerning0
+ *dictionary = @\{\cf9 \expnd0\expndtw0\kerning0
+@"number"\cf0 \expnd0\expndtw0\kerning0
+: number, \
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \expnd0\expndtw0\kerning0
+@"string"\cf0 \expnd0\expndtw0\kerning0
+: string\};\
+\cf3 \expnd0\expndtw0\kerning0
+NSNull\cf0 \expnd0\expndtw0\kerning0
+ *null = [NSNull \cf3 \expnd0\expndtw0\kerning0
+null\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *bigObject = [PFObject \cf3 \expnd0\expndtw0\kerning0
+objectWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"BigObject"\cf0 \expnd0\expndtw0\kerning0
+];\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myNumber"\cf0 \expnd0\expndtw0\kerning0
+] = number;\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myString"\cf0 \expnd0\expndtw0\kerning0
+] = string;\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myDate"\cf0 \expnd0\expndtw0\kerning0
+] = date;\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myData"\cf0 \expnd0\expndtw0\kerning0
+] = data;\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myArray"\cf0 \expnd0\expndtw0\kerning0
+] = array;\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myDictionary"\cf0 \expnd0\expndtw0\kerning0
+] = dictionary;\
+bigObject[\cf9 \expnd0\expndtw0\kerning0
+@"myNull"\cf0 \expnd0\expndtw0\kerning0
+] = null;\
+[bigObject \cf3 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs32 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+
+\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Queries\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+The general pattern is to create a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, put conditions on it, and then retrieve a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSArray
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ of matching 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+s using either 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ or 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithTarget:selector:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. For example, to retrieve scores with a particular 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+playerName
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, use the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKey:equalTo:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ method to constrain the value for a key.\
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"GameScore"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+equalTo\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Dan Stemkoski"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *objects, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (!error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// The find succeeded.\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Successfully retrieved %d scores."\cf0 \expnd0\expndtw0\kerning0
+, objects\cf3 \expnd0\expndtw0\kerning0
+.count\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Do something with the found objects\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *object in objects) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"%@"\cf0 \expnd0\expndtw0\kerning0
+, object\cf3 \expnd0\expndtw0\kerning0
+.objectId\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Log details of the failure\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Error: %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, error, [error \cf3 \expnd0\expndtw0\kerning0
+userInfo\cf0 \expnd0\expndtw0\kerning0
+]);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\}];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+Both 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithTarget:selector:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ work similarly in that they assure the network request is done without blocking, and run the block/callback in the main thread.\
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Query Constraints\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+There are several ways to put constraints on the objects found by a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. You can filter out objects with a particular key-value pair with 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKey:notEqualTo
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+notEqualTo\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Michael Yabuti"\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can give multiple constraints, and objects will only be in the results if they match all of the constraints. In other words, it's like an AND of constraints.\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+notEqualTo\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Michael Yabuti"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerAge"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+greaterThan\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@18\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can limit the number of results by setting 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+limit
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. By default, results are limited to 100, but anything from 1 to 1000 is a valid limit:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+query\cf3 \expnd0\expndtw0\kerning0
+.limit\cf0 \expnd0\expndtw0\kerning0
+ = \cf13 \expnd0\expndtw0\kerning0
+10\cf0 \expnd0\expndtw0\kerning0
+;\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can skip the first results by setting 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+skip
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. This can be useful for pagination:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+query\cf3 \expnd0\expndtw0\kerning0
+.skip\cf0 \expnd0\expndtw0\kerning0
+ = \cf13 \expnd0\expndtw0\kerning0
+10\cf0 \expnd0\expndtw0\kerning0
+;\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+For sortable types like numbers and strings, you can control the order in which results are returned:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Sorts the results in ascending order by the score field\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+orderByAscending\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Sorts the results in descending order by the score field\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+orderByDescending\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can add more sort keys to the query as follows:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Sorts the results in ascending order by the score field if the previous sort keys are equal.\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+addAscendingOrder\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Sorts the results in descending order by the score field if the previous sort keys are equal.\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+addDescendingOrder\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+For sortable types, you can also use comparisons in queries:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Restricts to wins < 50\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"wins"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+lessThan\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@50\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Restricts to wins <= 50\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"wins"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+lessThanOrEqualTo\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@50\cf0 \expnd0\expndtw0\kerning0
+]; \
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Restricts to wins > 50\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"wins"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+greaterThan\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@50\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Restricts to wins >= 50\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"wins"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+greaterThanOrEqualTo\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@50\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you want to retrieve objects matching several different values, you can use 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKey:containedIn:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, providing an array of acceptable values. This is often useful to replace multiple queries with a single query. For example, if you want to retrieve scores made by any player in a particular list:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Finds scores from any of Jonathan, Dario, or Shawn\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *names = @[\cf9 \expnd0\expndtw0\kerning0
+@"Jonathan Walsh"\cf0 \expnd0\expndtw0\kerning0
+,\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \expnd0\expndtw0\kerning0
+@"Dario Wunsch"\cf0 \expnd0\expndtw0\kerning0
+,\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \expnd0\expndtw0\kerning0
+@"Shawn Simon"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+containedIn\cf0 \expnd0\expndtw0\kerning0
+:names];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you want to retrieve objects that do not match any of several values you can use 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKey:notContainedIn:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, providing an array of acceptable values. For example, if you want to retrieve scores from players besides those in a list:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Finds scores from anyone who is neither Jonathan, Dario, nor Shawn\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *names = @[\cf9 \expnd0\expndtw0\kerning0
+@"Jonathan Walsh"\cf0 \expnd0\expndtw0\kerning0
+,\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \expnd0\expndtw0\kerning0
+@"Dario Wunsch"\cf0 \expnd0\expndtw0\kerning0
+,\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf9 \expnd0\expndtw0\kerning0
+@"Shawn Simon"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+notContainedIn\cf0 \expnd0\expndtw0\kerning0
+:names];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you want to retrieve objects that have a particular key set, you can use 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKeyExists
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. Conversely, if you want to retrieve objects without a particular key set, you can use 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKeyDoesNotExist
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf10 \cb5 \expnd0\expndtw0\kerning0
+// Finds objects that have the score set\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKeyExists\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf10 \expnd0\expndtw0\kerning0
+// Finds objects that don't have the score set\cf0 \expnd0\expndtw0\kerning0
+\
+[query \cf3 \expnd0\expndtw0\kerning0
+whereKeyDoesNotExist\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can use the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKey:matchesKey:inQuery:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ method to get objects where a key matches the value of a key in a set of objects resulting from another query. For example, if you have a class containing sports teams and you store a user's hometown in the user class, you can issue one query to find the list of users whose hometown teams have winning records. The query would look like:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *teamQuery = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Team"\cf0 \expnd0\expndtw0\kerning0
+];\
+[teamQuery \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"winPct"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+greaterThan\cf0 \expnd0\expndtw0\kerning0
+:@(\cf13 \expnd0\expndtw0\kerning0
+0\cf3 \expnd0\expndtw0\kerning0
+.5\cf0 \expnd0\expndtw0\kerning0
+)];\
+\cf3 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *userQuery = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryForUser\cf0 \expnd0\expndtw0\kerning0
+];\
+[userQuery \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"hometown"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+matchesKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"city"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+inQuery\cf0 \expnd0\expndtw0\kerning0
+:teamQuery];\
+[userQuery \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *results, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// results will contain users with a hometown team with a winning record\cf0 \expnd0\expndtw0\kerning0
+\
+\}];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+Conversely, to get objects where a key does not match the value of a key in a set of objects resulting from another query, use 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+whereKey:doesNotMatchKey:inQuery:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. For example, to find users whose hometown teams have losing records:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *losingUserQuery = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryForUser\cf0 \expnd0\expndtw0\kerning0
+];\
+[losingUserQuery \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"hometown"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+doesNotMatchKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"city"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+inQuery\cf0 \expnd0\expndtw0\kerning0
+:teamQuery];\
+[losingUserQuery \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *results, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// results will contain users with a hometown team with a losing record\cf0 \expnd0\expndtw0\kerning0
+\
+\}];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+You can restrict the fields returned by calling 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+selectKeys:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ with an 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSArray
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ of keys. To retrieve documents that contain only the 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+score
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+playerName
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ fields (and also special built-in fields such as 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+objectId
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+createdAt
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+updatedAt
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+):\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"GameScore"\cf0 \expnd0\expndtw0\kerning0
+];\
+[query \cf3 \expnd0\expndtw0\kerning0
+selectKeys\cf0 \expnd0\expndtw0\kerning0
+:@[\cf9 \expnd0\expndtw0\kerning0
+@"playerName"\cf0 \expnd0\expndtw0\kerning0
+, \cf9 \expnd0\expndtw0\kerning0
+@"score"\cf0 \expnd0\expndtw0\kerning0
+]];\
+[query \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *results, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// objects in results will only contain the playerName and score fields\cf0 \expnd0\expndtw0\kerning0
+\
+\}];
+\f2\fs40 \cf8 \cb1 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\pardeftab720
+\cf8 \
+NSPredicate\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you prefer using 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSPredicate
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ instead of after the fact,  a subset of the constraints can be specified by providing an 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSPredicate
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ when creating your 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFQuery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+NSPredicate\cf0 \expnd0\expndtw0\kerning0
+ *predicate = [NSPredicate \cf3 \expnd0\expndtw0\kerning0
+predicateWithFormat\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"playerName = 'Dan Stemkosk'"\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"GameScore"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+predicate\cf0 \expnd0\expndtw0\kerning0
+:predicate];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0
+\fs32 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Simple comparisons such as 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+=
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+!=
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+<
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+>
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+<=
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+>=
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+BETWEEN
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ with a key and a constant.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Containment predicates, such as 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+x IN \{1, 2, 3\}
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Key-existence predicates, such as 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+x IN SELF
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+BEGINSWITH
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ expressions.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Compound predicates with 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+AND
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+OR
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NOT
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Sub-queries with 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+"key IN %@", subquery
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+The following types of predicates are not supported:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Aggregate operations, such as 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+ANY
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+SOME
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+ALL
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, or 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NONE
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Regular expressions, such as 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+LIKE
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+MATCHES
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+CONTAINS
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+, or 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+ENDSWITH
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Predicates comparing one key to another.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Complex predicates with many 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+OR
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ed clauses.
+\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Compound Queries\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+If you want to find objects that match one of several queries, you can use 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+orQueryWithSubqueries:
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ method. For instance, if you want to find players with either have a lot of wins or a few wins, you can do:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *lotsOfWins = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Player"\cf0 \expnd0\expndtw0\kerning0
+];\
+[lotsOfWins \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"wins"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+greaterThan\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@150\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\
+\cf3 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *fewWins = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Player"\cf0 \expnd0\expndtw0\kerning0
+];\
+[fewWins \cf3 \expnd0\expndtw0\kerning0
+whereKey\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"wins"\cf0 \expnd0\expndtw0\kerning0
+ \cf3 \expnd0\expndtw0\kerning0
+lessThan\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@5\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+orQueryWithSubqueries\cf0 \expnd0\expndtw0\kerning0
+:@[fewWins,lotsOfWins]];\
+[query \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *results, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// results contains players with lots of wins or only a few wins.\cf0 \expnd0\expndtw0\kerning0
+\
+\}];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+Caching Queries\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+It's often useful to cache the result of a query on disk. This lets you show data when the user's device is offline, or when the app has just started and network requests have not yet had time to complete. Parse takes care of automatically flushing the cache when it takes up too much space.\
+The default query behavior doesn't use the cache, but you can enable caching by setting 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+query.cachePolicy
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. For example, to try the network and then fall back to cached data if the network is not available:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"GameScore"\cf0 \expnd0\expndtw0\kerning0
+];\
+query\cf3 \expnd0\expndtw0\kerning0
+.cachePolicy\cf0 \expnd0\expndtw0\kerning0
+ = kPFCachePolicyNetworkElseCache;\
+[query \cf3 \expnd0\expndtw0\kerning0
+findObjectsInBackgroundWithBlock\cf0 \expnd0\expndtw0\kerning0
+:^(\cf3 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *objects, \cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (!error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Results were successfully found, looking first on the\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// network and then on disk.\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// The network was inaccessible and we have no cached data for\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// this query.\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\}];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+Parse provides several different cache policies:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+kPFCachePolicyIgnoreCache
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The query does not load from the cache or save results to the cache. 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+kPFCachePolicyIgnoreCache
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ is the default cache policy.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+kPFCachePolicyCacheOnly
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The query only loads from the cache, ignoring the network. If there are no cached results, that causes a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFError
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+kPFCachePolicyNetworkOnly
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The query does not load from the cache, but it will save results to the cache.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+kPFCachePolicyCacheElseNetwork
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The query first tries to load from the cache, but if that fails, it loads results from the network. If neither cache nor network succeed, there is a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFError
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+kPFCachePolicyNetworkElseCache
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The query first tries to load from the network, but if that fails, it loads results from the cache. If neither network nor cache succeed, there is a 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFError
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+kPFCachePolicyCacheThenNetwork
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The query first loads from the cache, then loads from the network. In this case, the callback will actually be called twice - first with the cached results, then with the network results. Since it returns two results at different times, this cache policy cannot be used synchronously with 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+findObjects
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+.\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+If you need to control the cache's behavior, you can use methods provided in PFQuery to interact with the cache. You can do the following operations on the cache:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Check to see if there is a cached result for the query with:
+\f3\fs26 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth13200\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0\cf8 \cb5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+BOOL\cf0 \expnd0\expndtw0\kerning0
+ isInCache = [query \cf3 \expnd0\expndtw0\kerning0
+hasCachedResult\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs32 \cf0 \expnd0\expndtw0\kerning0
+Remove any cached results for a query with:
+\f3\fs26 \cb5 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth13200\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+[query \cf3 \expnd0\expndtw0\kerning0
+clearCachedResult\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\f4\fs54 \cf8 \expnd0\expndtw0\kerning0
+Push Notifications\
+\pard\pardeftab720
+
+\f2\fs32 \cf11 \cb12 \expnd0\expndtw0\kerning0
+To learn more about push check out our {\field{\*\fldinst{HYPERLINK "https://www.parse.com/docs/push_guide"}}{\fldrslt \cf8 \expnd0\expndtw0\kerning0
+Push Notification Guide}}!
+\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0\cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Open up your 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+AppDelegate.m
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+ file and add the following import to the top of the file:
+\f3\fs26 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth25720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0\cf4 \cb5 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+#import <Parse/Parse.h>\cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0
+\fs28 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Before continuing, select your Parse app from the menu at the right. These steps are for your "
+\f4 \expnd0\expndtw0\kerning0
+CoreDataSyncTutorial
+\f2 \expnd0\expndtw0\kerning0
+" app.\uc0\u8232 Then paste the following inside the 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+application:didFinishLaunchingWithOptions:
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+ function:
+\f3\fs26 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth25720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0\cf0 \cb5 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+[Parse \cf6 \expnd0\expndtw0\kerning0
+setApplicationId\cf0 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Y6jk4OSvcJpg3qX12SlhlJRkPw68nY9NyZ60FyzN"\cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf6 \expnd0\expndtw0\kerning0
+clientKey\cf0 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"dfJxBj4K8FWFM7osu3XK4Ykgdgs8AM8rtPoFh3bo"\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0
+\fs28 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Make your app register for remote notifications by adding the following in your 
+\f3\fs26 \cf3 \expnd0\expndtw0\kerning0
+application:didFinishLaunchingWithOptions:
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+ method (if you haven't already):
+\f3\fs26 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth25720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0\cf10 \cb5 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+// Register for Push Notitications, if running iOS 8\cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 \cf14 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ ([application \cf6 \expnd0\expndtw0\kerning0
+respondsToSelector\cf0 \expnd0\expndtw0\kerning0
+:\cf14 \expnd0\expndtw0\kerning0
+@selector\cf0 \expnd0\expndtw0\kerning0
+(registerUserNotificationSettings:)]) \{\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+UIUserNotificationTypeBadge |\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+UIUserNotificationTypeSound);\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0UIUserNotificationSettings\cf0 \expnd0\expndtw0\kerning0
+ *settings = [UIUserNotificationSettings \cf6 \expnd0\expndtw0\kerning0
+settingsForTypes\cf0 \expnd0\expndtw0\kerning0
+:userNotificationTypes\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf6 \expnd0\expndtw0\kerning0
+categories\cf14 \expnd0\expndtw0\kerning0
+:nil\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[application \cf6 \expnd0\expndtw0\kerning0
+registerUserNotificationSettings\cf0 \expnd0\expndtw0\kerning0
+:settings];\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[application \cf6 \expnd0\expndtw0\kerning0
+registerForRemoteNotifications\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 \} \cf14 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Register for Push Notifications before iOS 8\cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[application \cf6 \expnd0\expndtw0\kerning0
+registerForRemoteNotificationTypes\cf0 \expnd0\expndtw0\kerning0
+:(UIRemoteNotificationTypeBadge |\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+UIRemoteNotificationTypeAlert |\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+UIRemoteNotificationTypeSound)];\uc0\u8232 \}\u8232 
+\fs28 \cb1 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f2\fs32 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0
+\fs28 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Store the device token and handle the UI for notifications by adding the following to your main app delegate:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0
+\f3\fs26 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth25720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0\cf0 \cb5 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+- (\cf14 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)application:(\cf3 \expnd0\expndtw0\kerning0
+UIApplication\cf0 \expnd0\expndtw0\kerning0
+ *)application \cf6 \expnd0\expndtw0\kerning0
+didRegisterForRemoteNotificationsWithDeviceToken\cf0 \expnd0\expndtw0\kerning0
+:(\cf3 \expnd0\expndtw0\kerning0
+NSData\cf0 \expnd0\expndtw0\kerning0
+ *)deviceToken \{\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Store the deviceToken in the current installation and save it to Parse.\cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0PFInstallation\cf0 \expnd0\expndtw0\kerning0
+ *currentInstallation = [PFInstallation \cf6 \expnd0\expndtw0\kerning0
+currentInstallation\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[currentInstallation \cf6 \expnd0\expndtw0\kerning0
+setDeviceTokenFromData\cf0 \expnd0\expndtw0\kerning0
+:deviceToken];\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[currentInstallation \cf6 \expnd0\expndtw0\kerning0
+saveInBackground\cf0 \expnd0\expndtw0\kerning0
+];\uc0\u8232 \}\u8232 \'a0\u8232 - (\cf14 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)application:(\cf3 \expnd0\expndtw0\kerning0
+UIApplication\cf0 \expnd0\expndtw0\kerning0
+ *)application \cf6 \expnd0\expndtw0\kerning0
+didReceiveRemoteNotification\cf0 \expnd0\expndtw0\kerning0
+:(\cf3 \expnd0\expndtw0\kerning0
+NSDictionary\cf0 \expnd0\expndtw0\kerning0
+ *)userInfo \{\uc0\u8232 \cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[PFPush \cf6 \expnd0\expndtw0\kerning0
+handlePush\cf0 \expnd0\expndtw0\kerning0
+:userInfo];\uc0\u8232 \}\u8232 
+\f2\fs32 \cb1 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0
+\fs28 \cf0 \expnd0\expndtw0\kerning0
+Upload your .p12 certificate in the Apple Push certificates section of your {\field{\*\fldinst{HYPERLINK "https://www.parse.com/apps/coredatasynctutorial--926/edit#push"}}{\fldrslt \cf8 \expnd0\expndtw0\kerning0
+app's push settings}}. If you don't have your .p12 certificate \
+file, {\field{\*\fldinst{HYPERLINK "https://www.parse.com/tutorials/ios-push-notifications"}}{\fldrslt \cf8 \expnd0\expndtw0\kerning0
+head on over to our provisioning tutorial}} and go through sections 1 through 4 to correctly configure your app and obtain the .p12 certificate file.\
+\pard\tx720\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f4\fs54 \cf8 \expnd0\expndtw0\kerning0
+Handling Errors\
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+Parse has a few simple patterns for surfacing errors and handling them in your code.\
+There are two types of errors you may encounter. The first is those dealing with logic errors in the way you're using the SDK. These types of errors result in an 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSException
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ being raised. For an example take a look at the following code:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth15580\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf3 \cb5 \expnd0\expndtw0\kerning0
+PFUser\cf0 \expnd0\expndtw0\kerning0
+ *user = [PFUser \cf3 \expnd0\expndtw0\kerning0
+user\cf0 \expnd0\expndtw0\kerning0
+];\
+[user \cf3 \expnd0\expndtw0\kerning0
+signUp\cf0 \expnd0\expndtw0\kerning0
+];\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+This will throw an 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+NSInternalInconsistencyException
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ because 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+signUp
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ was called without first setting the required properties (
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+username
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ and 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+password
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+).\
+The second type of error is one that occurs when interacting with the Parse Cloud over the network. These errors are either related to problems connecting to the cloud or problems performing the requested operation. Let's take a look at another example:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+- (\cf8 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)getMyNote \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0PFQuery\cf0 \expnd0\expndtw0\kerning0
+ *query = [PFQuery \cf3 \expnd0\expndtw0\kerning0
+queryWithClassName\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"Note"\cf0 \expnd0\expndtw0\kerning0
+];\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+[query \cf3 \expnd0\expndtw0\kerning0
+getObjectInBackgroundWithId\cf0 \expnd0\expndtw0\kerning0
+:\cf9 \expnd0\expndtw0\kerning0
+@"thisObjectIdDoesntExist"\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 target\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+self\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 selector\cf0 \expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+@selector\cf0 \expnd0\expndtw0\kerning0
+(callbackForGet:error:)];\
+\}\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+In the above code, we try to fetch an object with a non-existent 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+objectId
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. The Parse Cloud will return an error with an error code set in 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+code
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ and message in the error's 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+userInfo
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. Here's how to handle it properly in your callback:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+- (\cf8 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)callbackForGet:(\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *)result \cf3 \expnd0\expndtw0\kerning0
+error\cf0 \expnd0\expndtw0\kerning0
+:(\cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *)error \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (result) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Everything went fine!"\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ ([error \cf3 \expnd0\expndtw0\kerning0
+code\cf0 \expnd0\expndtw0\kerning0
+] == kPFErrorObjectNotFound) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Uh oh, we couldn't find the object!"\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Error: %@"\cf0 \expnd0\expndtw0\kerning0
+, [error \cf3 \expnd0\expndtw0\kerning0
+userInfo\cf0 \expnd0\expndtw0\kerning0
+][\cf9 \expnd0\expndtw0\kerning0
+@"error"\cf0 \expnd0\expndtw0\kerning0
+]);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\}\cell \lastrow\row
+\pard\pardeftab720
+
+\f2\fs32 \cf0 \cb1 \expnd0\expndtw0\kerning0
+The query might also fail because the device couldn't connect to the Parse Cloud. Here's the same callback but with a bit of extra code to handle that scenario explicitly:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth21280\clftsWidth3 \clminw13200 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3\fs26 \cf0 \cb5 \expnd0\expndtw0\kerning0
+- (\cf8 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)callbackForGet:(\cf3 \expnd0\expndtw0\kerning0
+PFObject\cf0 \expnd0\expndtw0\kerning0
+ *)result \cf3 \expnd0\expndtw0\kerning0
+error\cf0 \expnd0\expndtw0\kerning0
+:(\cf3 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *)error \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (result) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Everything went fine!"\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ ([error \cf3 \expnd0\expndtw0\kerning0
+code\cf0 \expnd0\expndtw0\kerning0
+] == kPFErrorObjectNotFound) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Uh oh, we couldn't find the object!"\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf10 \expnd0\expndtw0\kerning0
+// Now also check for connection errors:\cf0 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ ([error \cf3 \expnd0\expndtw0\kerning0
+code\cf0 \expnd0\expndtw0\kerning0
+] == kPFErrorConnectionFailed) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Uh oh, we couldn't even connect to the Parse Cloud!"\cf0 \expnd0\expndtw0\kerning0
+);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\} \cf8 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \cf8 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (error) \{\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+NSLog(\cf9 \expnd0\expndtw0\kerning0
+@"Error: %@"\cf0 \expnd0\expndtw0\kerning0
+, [error \cf3 \expnd0\expndtw0\kerning0
+userInfo\cf0 \expnd0\expndtw0\kerning0
+][\cf9 \expnd0\expndtw0\kerning0
+@"error"\cf0 \expnd0\expndtw0\kerning0
+]);\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\cf3 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf0 \expnd0\expndtw0\kerning0
+\}\
+\}\cell \lastrow\row
+\pard\tx720\pardeftab720
+
+\f2\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\f4\fs54 \cf8 \expnd0\expndtw0\kerning0
+Files
+\f2\fs32 \expnd0\expndtw0\kerning0
+\
+
+\fs40 \cf8 \expnd0\expndtw0\kerning0
+The PFFile\
+
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFFile
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+ lets you store application files in the cloud that would otherwise be too large or cumbersome to fit into a regular 
+\f3\fs28 \cf3 \expnd0\expndtw0\kerning0
+PFObject
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+. The most common use case is storing images but you can also use it for documents, videos, music, and any other binary data (up to 10 megabytes).\
+\cf11 \cb12 \expnd0\expndtw0\kerning0
+Learn how to make an app that allows the user to take photos and upload it directly to Parse in our {\field{\*\fldinst{HYPERLINK "https://www.parse.com/tutorials/saving-images"}}{\fldrslt \cf8 \expnd0\expndtw0\kerning0
+Saving Images tutorial}}.
+\fs28 \cf2 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf2 \
+\
+\
+\
+}
